@@ -37,7 +37,16 @@ git config --global user.email "abc@gmail.com"
 git add . - add all the files
 git commit -m "message" - commits the added files with a message
 git push <remote> branch - pushes to main branch
-
+```
 5. Creating an api that give predictions code using the Flask 
 6. Create templates folder and home.html for render_template
 7. Installed the postman to test the predict_api() function
+8. Now, create a webpage so that we can pass all the input parameters in the web page and also the prediction can be seen in the web page itself
+
+Upto now, we tested the app in offline method. Now, we can go forward and deploy the application in Heroku cloud
+9. Procfile is created in the project. There are commands inside procfile so that whenever the application starts, all the commands will be run in the cloud.
+ 
+ gunicorn - green unicorn is the python-http server for wsgi applications. It allows you to run python process concurrently.
+ ex: when there are multiple users hitting the servers, gunicorn helps us to distribute the requests across instances.
+ 
+
