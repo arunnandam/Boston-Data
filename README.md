@@ -16,4 +16,28 @@ Tools and Softwares required to deploy the project
 4. GitCLI
 
 # Steps for deploying the project
-1. Create 
+1. Create Conda Environment
+```
+conda create -p python==3.7 -y
+```
+
+2. Install requirements
+```
+pip install -r requirements.txt
+```
+
+3. Setup Git Enter user name details
+```
+git config --global user.name ""
+git config --global user.email "abc@gmail.com"
+```
+
+4. Git Steps to push the code to the main branch
+```
+git add . - add all the files
+git commit -m "message" - commits the added files with a message
+git push <remote> branch - pushes to main branch
+
+5. Creating an api that give predictions code using the Flask 
+6. Create templates folder and home.html for render_template
+7. Installed the postman to test the predict_api() function
