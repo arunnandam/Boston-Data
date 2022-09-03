@@ -48,5 +48,10 @@ Upto now, we tested the app in offline method. Now, we can go forward and deploy
  
  gunicorn - green unicorn is the python-http server for wsgi applications. It allows you to run python process concurrently.
  ex: when there are multiple users hitting the servers, gunicorn helps us to distribute the requests across instances.
+
+ 10. Done deployment in Heroku, now we are actually building the CI/CD pipeline using GitHub actions. So that, whenever we push the code GitHib it automatically deploys the entire code into production
+
+ To create GitHub actions, we need to create github workflows folder which contains main.yaml and also add the secrets in the GitHub repository settings.
+
  
 
